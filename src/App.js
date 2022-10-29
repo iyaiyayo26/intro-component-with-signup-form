@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Form from "./Components/Form";
+import Intro from "./Components/Intro";
 
 function App() {
+  const background = "./assets/bg-intro-desktop.png";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="my-64 mx-10 px-10 py-24 bg-[#ff7a7a] xl:flex" style={{ backgroundImage: `url(${background})` }}>
+      {/* bungkus tulisan atas */}
+      <Intro />
+      {/* bungkus tulisan yang bawah + FORM */}
+      <Form />
     </div>
   );
 }
